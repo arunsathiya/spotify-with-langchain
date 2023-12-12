@@ -1,0 +1,5 @@
+description,code
+"Get me the URI for the album The Colour And The Shape","search_results = sp.search(q='The Colour And The Shape', type='album')\nuri = search_results['albums']['items'][0].get('uri')\nreturn uri"
+"Play the latest album by Taylor Swift","search_results = sp.search(q='Taylor Swift', type='artist')\nartist_uri = search_results['artists']['items'][0].get('uri')\nalbums = sp.artist_albums(artist_uri, album_type='album')\nlatest_album_uri = albums['items'][0].get('uri')\nreturn latest_album_uri"
+"Find a playlist for running","playlists = sp.search(q='running', type='playlist')\nplaylist_uri = playlists['playlists']['items'][0].get('uri')\nreturn playlist_uri"
+"Recommend songs similar to 'Shape of You'","track_results = sp.search(q='Shape of You', type='track')\ntrack_uri = track_results['tracks']['items'][0].get('uri')\nrecommendations = sp.recommendations(seed_tracks=[track_uri])\nrecommended_tracks = [track['uri'] for track in recommendations['tracks']]\nreturn recommended_tracks"
