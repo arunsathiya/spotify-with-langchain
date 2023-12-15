@@ -1,6 +1,6 @@
 # 🔥 Spotify with Langchain
 
-This Jupyter notebook project queries the Spotify web API and responds to the natural language input. Uses Langchain's PALChain (Program-Aided Language) prompting technology.
+This Jupyter notebook project queries the Spotify web API using the Spotipy SDK and responds to the natural language input. Uses Langchain's PALChain (Program-Aided Language) prompting technology. Responses are in natural language as well. Gradio chat interface makes the communication possible.
 
 # Setup
 
@@ -14,8 +14,10 @@ This Jupyter notebook project queries the Spotify web API and responds to the na
 OPENAI_API_KEY=sk-redacted
 SPOTIFY_CLIENT_ID=redacted
 SPOTIFY_CLIENT_SECRET=redacted
+PINECONE_API_KEY=redacted
+PINECONE_ENVIRONMENT=gcp-starter
 ```
 
 # Run
 
-- Run all the cells in the notebook.
+- Run necessary cells in the notebook.
