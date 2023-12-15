@@ -46,12 +46,7 @@ Welcome to the Spotify with Langchain project! This Jupyter notebook-based appli
      source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
      ```
 
-4. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-5. **Open and Configure Jupyter Notebook**
+4. **Open and Configure Jupyter Notebook**
    - Launch Jupyter Notebook:
      ```bash
      jupyter notebook
